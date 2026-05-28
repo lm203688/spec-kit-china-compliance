@@ -1,0 +1,32 @@
+schema_version: "1.0"
+
+extension:
+  id: "china-compliance"
+  name: "China Compliance Extension"
+  version: "1.0.0"
+  description: "Chinese advertising law, data compliance, and AI search visibility checks for Spec-Driven Development"
+  author: "lm203688"
+  repository: "https://github.com/lm203688/spec-kit-china-compliance"
+  license: "MIT"
+  homepage: "https://github.com/lm203688/spec-kit-china-compliance"
+
+requires:
+  speckit_version: ">=0.1.0"
+
+provides:
+  commands:
+    - name: "speckit.china-compliance.check"
+      file: "commands/check.md"
+      description: "Check content for Chinese advertising law violations, banned words, and platform-specific compliance"
+    - name: "speckit.china-compliance.geo-audit"
+      file: "commands/geo-audit.md"
+      description: "Audit brand visibility in Chinese AI search engines (DeepSeek/Kimi/豆包/通义/文心)"
+    - name: "speckit.china-compliance.data-export"
+      file: "commands/data-export.md"
+      description: "Assess cross-border data transfer compliance (PIPL/GDPR/CCPA) for Chinese applications"
+
+tags:
+  - "compliance"
+  - "chinese"
+  - "geo"
+  - "legal"
